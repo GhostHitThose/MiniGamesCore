@@ -61,4 +61,10 @@ public class ArenaCommand implements CommandExecutor {
     return true;
   }
 
+  private void sendList(){
+    for(Arena arena:ArenaHandler.getArenas()){
+
+    }
+  }
+
 }

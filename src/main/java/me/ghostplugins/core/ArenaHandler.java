@@ -8,6 +8,9 @@ import java.util.Set;
 
 public class ArenaHandler {
 
+    // TODO
+    // MAKE THIS A HASH MAP <K, V> <MINIGAME, ARENA>
+    // !!!!!!!
     @Getter
     private static final ArrayList<Arena> arenas = new ArrayList<>();
 
