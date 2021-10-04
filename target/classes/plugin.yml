@@ -1,0 +1,4 @@
+name: MiniGamesCore
+version: 1.0-SNAPSHOT
+main: me.ghostplugins.core.MiniGamesCore
+api-version: 1.17
