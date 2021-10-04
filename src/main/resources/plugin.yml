@@ -2,3 +2,10 @@ name: MiniGamesCore
 version: ${project.version}
 main: me.ghostplugins.core.MiniGamesCore
 api-version: 1.17
+commands:
+  tntrun:
+    description: 'Main command for TntRun.'
+    usage: /tntrun <join:leave:list> <id>
+  tnttag:
+    description: 'Main command for TntTag.'
+    usage: /tnttag <join:leave:list> <id>

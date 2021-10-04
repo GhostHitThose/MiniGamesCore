@@ -4,13 +4,13 @@ import me.ghostplugins.core.Arena;
 import me.ghostplugins.core.MiniGame;
 
 public class TntRun extends MiniGame {
-    @Override
-    public void createArena(int id) {
-        Arena arena = new TntRunArena(id);
+
+    public TntRun(){
+        setName("TntRun");
     }
 
     @Override
-    public String getName() {
-        return "TntRun";
+    public void createArena(int id) {
+        Arena arena = new TntRunArena(id, this);
     }
 }

@@ -1,8 +1,5 @@
 package me.ghostplugins.core;
 
-import me.ghostplugins.core.tntrun.TntRun;
-import me.ghostplugins.core.tnttag.TntTag;
-import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.logging.Level;
@@ -28,11 +25,7 @@ public final class MiniGamesCore extends JavaPlugin {
         log("Loading commands and event listeners...");
 
         // main plugin logic
-        TntRun tntRun = new TntRun();
-        TntTag tntTag = new TntTag();
-
-        ArenaHandler.createArenas(tntRun);
-        ArenaHandler.createArenas(tntTag);
+        MiniGameHandler.loadMiniGames();
 
         log("Enabled " + getName() + " v" + getDescription().getVersion());
     }

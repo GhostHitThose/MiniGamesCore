@@ -1,6 +1,11 @@
 package me.ghostplugins.core;
 
+import lombok.Getter;
+import lombok.Setter;
+
 public abstract class MiniGame {
     public abstract void createArena(int id);
-    public abstract String getName();
+    @Getter
+    @Setter
+    private String name;
 }
